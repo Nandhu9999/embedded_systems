@@ -5,6 +5,13 @@
 - Great trade-off between Performance, Cost, Efficiency
 
 # TM4C123**GH**6PM
+- 6 ports
+    - A : 8pins
+    - B : 8pins
+    - C : 8pins
+    - D : 8pins
+    - E : 6pins
+    - F : 8pins
 
 ```c
   SYSCTL->RCGCGPIO |= 0x21
