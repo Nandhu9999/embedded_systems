@@ -7,7 +7,7 @@ MNEUMONIC{S}{condition} {Rd}, {Operand1}, {Operand2}
       * example: ADDS, 
       * ADDS ensures the carry gets saved because normal ADD is unstable in saving the carry value
 
- - {condition} : needed to be met to execute instruction (GT,LES,EQ)
+ - {condition} : needed to be met to execute instruction (GT, LES, EQ, GTE, LESEQ)
  - {Rd} : destination register
  - {Operand1} : first operand
  - {Operand2} : second(flexible) operand. Can be immediate value OR a register with an optional shift
@@ -96,5 +96,9 @@ LOAD/STORE
 - Single data swap (SWP)
 
 ```asm
+
+    MOV R0, #4294967295
+    LDR R1, =0x40000000
+    STR R0, [R1], #4
 
 ```
