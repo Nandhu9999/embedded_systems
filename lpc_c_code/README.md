@@ -12,9 +12,9 @@
 #define BUZZER_OFF() IO0SET=(1<<11)
 
 #define SW1 (IO0PIN & 0x00008000)	 
-#define SW2	(IO0PIN & 0x00002000)
-#define SW3	(IO0PIN & 0x00001000)
-#define SW4	(IO0PIN & 0x40000000)
+#define SW2 (IO0PIN & 0x00002000)
+#define SW3 (IO0PIN & 0x00001000)
+#define SW4 (IO0PIN & 0x40000000)
 
 ```
 
