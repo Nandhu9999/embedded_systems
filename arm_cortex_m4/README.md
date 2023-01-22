@@ -36,7 +36,8 @@
     GPIOF->PUR = 0x10;
 ```
 - Pull Up Register is used to enable or disable the internal pull-up resistor of the pins
-- it means, to ???
+- *When the internal pull-up resistor is enabled, it causes the pin to be pulled to a high voltage level when no external force is applied. 
+This can be useful in preventing floating inputs or debouncing switch inputs.*
     - 0x10 is 0001 0000 so
     - 0 1 2 3 4 5 6 7 | PINS
     - 0 0 0 1 0 0 0 0  | ENAB**1**E or DIS**0**BLE
