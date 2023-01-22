@@ -82,3 +82,16 @@ WHILE
 	B WHILE
 
 ```
+
+LOAD/STORE
+
+```asm
+
+-Single register data transfer
+	* BASIC ONES: LDR / STR / LDRM / STRB
+	* HALF WORDS: LDRH / STRH
+-Block data transfer (LDM, STM)
+-Single data swap (SWP)
+
+
+```
