@@ -11,3 +11,9 @@
 #define BUZZER_ON() IO0CLR=(1<<11)
 #define BUZZER_OFF() IO0SET=(1<<11)
 ```
+
+```c
+PINSEL0 = 0x00000000;		// Enable GPIO on all pins	
+PINSEL1 = 0x00000000;
+PINSEL2 = 0x00000000
+```
