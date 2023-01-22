@@ -21,10 +21,10 @@
     - to enable multple ports, we add the port numbers 
     - => PORT A + PORT F = 0x01 + 0x20 = 0x21
 ```c
-  GPIOF->DIR = 0x0E;
+  GPIOX->DIR = 0x0E;
 ```
 - DIR register is used to set the direction for that particular Port
-- **PORT F** has **8 PINS**, which needs to be identified if its taking input or giving output
+- **PORT X** has **8 PINS**, which needs to be identified if its taking input or giving output
 
     - 0x0E is 0000 1110 so
     - 7 6 5 4 3 2 1 0 | PINS
