@@ -25,5 +25,5 @@ LOGICAL
 AND R0, #0, #0
 ORR ... ... ...
 EOR ... ... ...     ; eXclusive OR    
-BIC ... ... ...     ; Bits Clear (AND operation on the bits in Rn with the complements of the corresponding bits in the value of Operand2)
+BIC ... ... ...     ; Bits Clear (AND operation on the bits in Rn with the corresponding bits in Operand2)
 ```
