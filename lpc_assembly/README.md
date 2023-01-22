@@ -18,3 +18,12 @@ stop B stop
 
   END             		; end of file
 ```
+
+LOGICAL
+
+```asm
+AND R0, #0, #0
+ORR ... ... ...
+EOR ... ... ...     ; eXclusive OR    
+BIC ... ... ... 
+```
