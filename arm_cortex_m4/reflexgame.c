@@ -6,12 +6,12 @@ int main(void)
 {
 	unsigned int num;
 	int isOn = 0;
-    unsigned int value;
+        unsigned int value;
     SYSCTL->RCGCGPIO |= 0x21;   /* enable clock to GPIOF */
 
     GPIOF->DIR = 0x0E;          /* set PORTF1 pin as output (LED) pin */
                            /* and PORTF0 as input, SW2 is on PORTF0 */
-	GPIOA->DIR=0xFF;
+    GPIOA->DIR=0xFF;
     GPIOA->DEN=0xFF;
 
     GPIOF->DEN = 0x1E;          /* set PORTF pins 1-0 as digital pins */
@@ -20,8 +20,8 @@ int main(void)
 
     while(1)
     {   
-		isOn =0;
-		num = rand() % 1000 + 500;
+	isOn =0;
+	num = rand() % 1000 + 500;
         value = GPIOF->DATA;    /* read data from PORTF */
        // value = ~value;         /* switch is low active; LED is high active */
        // value = value >> 1;     /* shift it right to display on green LED */
@@ -31,9 +31,9 @@ int main(void)
 
 		if(!value)
 		{
-			isOn = 1;
-			GPIOA->DATA = 0xFF;
-			delayMs(1000);
+		    isOn = 1;
+		    GPIOA->DATA = 0xFF;
+		    delayMs(1000);
 		}
 
 		delayMs(200);
