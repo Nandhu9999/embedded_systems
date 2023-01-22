@@ -87,9 +87,9 @@ LOAD/STORE
 
 -Single register data transfer
 
-	* BASIC ONES: LDR / STR / LDRM / STRB
+   - BASIC ONES: LDR / STR / LDRM / STRB
 	
-	* HALF WORDS: LDRH / STRH
+   - HALF WORDS: LDRH / STRH
 	
 -Block data transfer (LDM, STM)
 
