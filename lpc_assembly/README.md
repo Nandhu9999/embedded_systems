@@ -58,3 +58,9 @@ BARREL SHIFTER
 * Why? It is usually used for multiplication and division by 2
 * Barrel shifter can shift or rotate data in a single cycle
 
+```asm
+
+LSL R0, R0, #4      ; multiply by 4
+LSR R0, R0, #2      ; divide by 2
+
+```
