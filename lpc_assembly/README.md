@@ -126,5 +126,9 @@ BRANCH
 
 ```
 
+## DATA
+```asm
+   AREA data1, DATA, READWRITE
+```
 
 
