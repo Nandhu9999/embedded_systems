@@ -125,9 +125,9 @@ BRANCH
     BNE    ; Branch Not Equals
     BEQ    ; Branch Equals
     
-    BL     ; Branch Link
-    BX     ; Branch Exchange
-    BLX    ; Branch Link Exchange
+    BL <label>  ; Branch Link 
+    BX LR       ; Branch Exchange (return from subroutine)
+    BLX <label> ; Branch Link Exchange 
 
 ```
 
