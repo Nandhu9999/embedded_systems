@@ -9,9 +9,10 @@
 ```c
   SYSCTL->RCGCGPIO |= 0x21
 ```
-- microcontroller's "SYSTEM CONTROL" sets the RCGC *Runmode Clock Gating Control* GPIO
+- microcontroller's "SYSTEM CONTROL" sets the RCGC *Runmode Clock Gating Control*) GPIO
     - this enables a specific port { portA: 0x01, portB: 0x02, portC: 0x04, portD: 0x08, portE: 0x10, portF: 0x20 } 
-
+    - to enable multple ports, we add the port numbers 
+    - => PORT A + PORT F = 0x01 + 0x20 = 0x21
 ```c
   GPIOF->DIR = 0x0E;
 ```
