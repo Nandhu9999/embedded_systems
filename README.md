@@ -7,7 +7,14 @@ on LPC2148
 
 MNEUMONIC{S}{condition} {Rd}, {Operand1}, {Operand2}
  - {S} : optional suffix
+  * example: ADDS
+  
+  ADDS ensures the carry gets saved because normal ADD is unstable
+
  - {condition} : needed to be met to execute instruction
  - {Rd} : destination register
  - {Operand1} : first operand
  - {Operand2} : second(flexible) operand. Can be immediate value OR a register with an optional shift
+
+
+
