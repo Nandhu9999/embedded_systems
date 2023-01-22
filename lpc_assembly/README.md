@@ -128,7 +128,12 @@ BRANCH
 
 ## DATA
 ```asm
+
    AREA data1, DATA, READWRITE
+   
+ numARR DCD 1,2,3,4        ; Define Constant Data
+ strARR DCB "DEFINE BYTE"  ; string array
+   
 ```
 
 
