@@ -3,7 +3,7 @@
 BASIC
 
 ```asm
-  AREA     RESET, CODE, READONLY
+  AREA     somename, CODE, READONLY
                      
   ENTRY                   
 start
