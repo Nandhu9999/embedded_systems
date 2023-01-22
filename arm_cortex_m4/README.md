@@ -9,3 +9,13 @@
 ```c
   SYSCTL->RCGCGPIO |= 0x21
 ```
+- explain
+
+```c
+  GPIOF->DIR = 0x0E;
+```
+
+```c
+  GPIOA->DIR=0xFF;
+  GPIOA->DEN=0xFF;
+```
