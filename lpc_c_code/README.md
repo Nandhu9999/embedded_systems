@@ -16,4 +16,7 @@
 PINSEL0 = 0x00000000;		// Enable GPIO on all pins	
 PINSEL1 = 0x00000000;
 PINSEL2 = 0x00000000;
+
+IO1DIR = (1<<16) | (1<<17) | (1<<18) | (1<<19);
+IO0DIR = (1<<11);
 ```
