@@ -119,7 +119,11 @@ LOAD/STORE
 
 BRANCH
 ```asm
-
+    
+    B      ;
+    BNE    ;
+    BEQ    ;
+    
     BL     ; 
     BX     ; 
     BLX    ; 
