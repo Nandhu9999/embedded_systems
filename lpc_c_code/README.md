@@ -1,7 +1,7 @@
 # LPC C code
 
 ```c
-    #include <lpc214x.h>
+#include <lpc214x.h>
 ```
 
 ```c
