@@ -97,7 +97,7 @@ LOAD/STORE
 
 ```asm
 
-    MOV R0, #4294967295
+    MOV R0, #4294967295 ; it shouldn't work but it does (range should be 0-255)
     LDR R1, =0x40000000
     STR R0, [R1], #4
 
