@@ -63,11 +63,13 @@ BARREL SHIFTER
 LSL R0, R0, #4      ; multiply by 2^4
 LSR R0, R0, #2      ; divide by 2^2
 ASR R0, R0, #2      ; divides by 2^2 AND preserves sign bit(for 2's complement operations)
-; Multiplication using MUL(no division in ARM)
+
+; Multiplication using MUL
 
 	MUL R2, R1, R0
 
 ; Custom Division Algo
+; (no division in ARM)
 
 	MOV R0, #16 ; DIVIDEND
 	MOV R1, #4  ; DIVISOR
