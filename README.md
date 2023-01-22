@@ -7,9 +7,7 @@ on LPC2148
 
 MNEUMONIC{S}{condition} {Rd}, {Operand1}, {Operand2}
  - {S} : optional suffix
-  * example: ADDS
-  
-  ADDS ensures the carry gets saved because normal ADD is unstable
+  * example: ADDS, ADDS ensures the carry gets saved because normal ADD is unstable
 
  - {condition} : needed to be met to execute instruction
  - {Rd} : destination register
