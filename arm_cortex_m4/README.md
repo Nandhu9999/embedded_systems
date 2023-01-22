@@ -46,6 +46,8 @@ This can be useful in preventing floating inputs or debouncing switch inputs.*
     - 0 0 0 1 0 0 0 0  | ENAB**1**E or DIS**0**BLE
 
 ```c
-    GPIOF->DATA = 0x00;
+    value = GPIOF->DATA; 
+    GPIOF->DATA = 0x0E; 
 ```
--
+- Getting Input data from PORT F
+- Setting Output data to PORT F
