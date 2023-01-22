@@ -6,3 +6,6 @@
 
 # TM4C123**GH**6PM
 
+```c
+  SYSCTL->RCGCGPIO |= 0x21
+```
