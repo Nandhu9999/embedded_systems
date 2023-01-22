@@ -122,8 +122,13 @@ BRANCH
 ```asm
     
     B      ; Branch
-    BNE    ; Branch Not Equals
-    BEQ    ; Branch Equals
+    BEQ    ; ==
+    BNE    ; !=
+    
+    BGT    ; >
+    BLT    ; <
+    BGE    ; >=
+    BLE    ; <=
     
     BL <label>  ; Branch Link 
     BX LR       ; Branch Exchange (return from subroutine)
