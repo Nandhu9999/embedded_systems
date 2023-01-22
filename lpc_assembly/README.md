@@ -7,6 +7,7 @@ BASIC
                      
   ENTRY                   
 start
+
   MOV R0, #10         ; Move value 10(0x0A) to register 0
   ADD R0, R0, #1      ; ADD 1 to register 0 value | ADC = addition + carry
   SUB R0, R0, #-1     ; SUBC = subtract + carry
@@ -22,6 +23,7 @@ stop B stop
 LOGICAL
 
 ```asm
+
 AND R0, #0, #0
 ORR ... ... ...
 EOR ... ... ...     ; eXclusive OR    
@@ -31,6 +33,7 @@ BIC ... ... ...     ; BIt Clear (AND operation on the bits in Rn with the corres
 COMPARE
 
 ```asm
+
 CMP
 CMN
 TST
