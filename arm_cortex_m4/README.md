@@ -45,3 +45,7 @@ This can be useful in preventing floating inputs or debouncing switch inputs.*
     - 0 1 2 3 4 5 6 7 | PINS
     - 0 0 0 1 0 0 0 0  | ENAB**1**E or DIS**0**BLE
 
+```c
+    GPIOF->DATA = 0x00;
+```
+-
