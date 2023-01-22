@@ -47,8 +47,8 @@ COMPARE
 
 ```asm
 
-CMP
-CMN
-TST
-TEQ
+CMP R0 , R1         ; op1 - op2
+CMN ... ...         ; op1 + op2
+TST ... ...         ; op1 AND op2
+TEQ ... ...         ; op1 EOR op2
 ```
