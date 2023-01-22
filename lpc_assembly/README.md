@@ -52,3 +52,9 @@ CMN ... ...         ; op1 + op2
 TST ... ...         ; op1 AND op2
 TEQ ... ...         ; op1 EOR op2
 ```
+
+BARREL SHIFTER
+
+* Why? It is usually used for multiplication and division by 2
+* Barrel shifter can shift or rotate data in a single cycle
+
