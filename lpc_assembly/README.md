@@ -129,10 +129,26 @@ BRANCH
 ## DATA
 ```asm
 
-   AREA data1, DATA, READWRITE
-   
- numARR DCD 1,2,3,4        ; Define Constant Data
- strARR DCB "DEFINE BYTE"  ; string array
+  AREA data1, DATA, READONLY
+	  
+	numARR DCD 1,2,3,4        ; Define Constant Data
+	strARR DCB "DEFINE BYTE"  ; string array
+
+  AREA RESET, CODE, READONLY
+                     
+  ENTRY                   
+start
+
+    LDR R1, =numARR
+    LDR R2, =strARR
+
+    LDR R3,[R1]
+    LDRB R4,[R2]
+
+stop B stop
+
+    END
+	  
    
 ```
 
