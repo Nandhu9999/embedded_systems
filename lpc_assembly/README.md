@@ -113,5 +113,4 @@ LOAD/STORE
     LDR R0, [R1], #4      ; R0 = value at R1, R1 = R1 + 4
     LDR R0, [R1, #4]      ; R0 = value at R1 + 4, R1 = R1
     LDR R0, [R1, #4]!     ; R0 = value at R1 + 4, R1 = R1 + 4
-    
 ```
