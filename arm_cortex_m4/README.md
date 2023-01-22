@@ -24,13 +24,13 @@
     
 
 ```c
-  GPIOA->DIR=0xFF;
   GPIOA->DEN=0xFF;
 ```
 - Digital ENable register of the GPIO port A
 - used enable or disable the digital functionality of the individual pins
-- ENAB**1**E or DIS**0**BLE
-
+    - 0xFF is 1111 1111 so
+    - 0 1 2 3 4 5 6 7 | PINS
+    - 1 1 1 1 1 1 1 1  | ENAB**1**E or DIS**0**BLE
 ```c
     GPIOF->DEN = 0x1E;
     GPIOF->PUR = 0x10;
