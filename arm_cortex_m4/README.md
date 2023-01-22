@@ -26,3 +26,5 @@
     GPIOF->DEN = 0x1E;
     GPIOF->PUR = 0x10;
 ```
+- ...
+
