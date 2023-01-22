@@ -99,6 +99,11 @@ LOAD/STORE
 
     MOV R0, #4294967295 ; it shouldn't work but it does (range should be 0-255)
     LDR R1, =0x40000000
-    STR R0, [R1], #4
+    STR R0, [R1]
+
+    ; to save data to the next part of the memory address
+    LDR R2, [R1]
+    STR R2, [R1], #4
+    STR R12, [R1]
 
 ```
