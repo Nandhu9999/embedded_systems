@@ -21,7 +21,7 @@
     - 0x0E is 0000 1110 so
     - 1 = OUTPUT, 0 = INPUT
     - 0 1 2 3 4 5 6 7 | PINS
-    - 0 0 0 0 **1 1 1 0**  | PORT
+    - 0 0 0 0 1 1 1 0  | OU1PUT OR INPoT
     
 
 ```c
