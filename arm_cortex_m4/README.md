@@ -58,4 +58,5 @@ This can be useful in preventing floating inputs or debouncing switch inputs.*
 ```
 - Getting Input data from PORT F
 - Setting Output data to PORT F
-- COLORS??
+- Colors 🔴2 | 🟦4 | 💚8
+
