@@ -60,7 +60,7 @@ BARREL SHIFTER
 
 ```asm
 
-LSL R0, R0, #4      ; multiply by 4
-LSR R0, R0, #2      ; divide by 2
+LSL R0, R0, #4      ; multiply by 2^4
+LSR R0, R0, #2      ; divide by 2^2
 
 ```
