@@ -18,6 +18,7 @@
 ```
 - DIR register is used to set the direction for that particular Port
 - **PORT F** has **8 PINS**, which needs to be identified if its taking input or giving output
+
     - 0x0E is 0000 1110 so
     - 0 1 2 3 4 5 6 7 | PINS
     - 0 0 0 0 1 1 1 0  | OU**1**PUT OR INP**0**T
@@ -27,6 +28,7 @@
   GPIOA->DEN=0xFF;
 ```
 - Digital ENable register used to enable or disable the digital functionality of the individual pins
+
     - 0xFF is 1111 1111 so
     - 0 1 2 3 4 5 6 7 | PINS
     - 1 1 1 1 1 1 1 1  | ENAB**1**E or DIS**0**BLE
@@ -38,6 +40,7 @@
 - Pull Up Register is used to enable or disable the internal pull-up resistor of the pins
 - *When the internal pull-up resistor is enabled, it causes the pin to be pulled to a high voltage level when no external force is applied. 
 This can be useful in preventing floating inputs or debouncing switch inputs.*
+
     - 0x10 is 0001 0000 so
     - 0 1 2 3 4 5 6 7 | PINS
     - 0 0 0 1 0 0 0 0  | ENAB**1**E or DIS**0**BLE
