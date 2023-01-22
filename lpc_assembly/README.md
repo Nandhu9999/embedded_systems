@@ -1,5 +1,14 @@
 # Assembly Notes
 
+- Total 18 registers
+       - R0-R12: normal GPIO pins
+       - SP: stack pointer
+       - LR: link register
+       - PC: program counter
+       - CPSR: Current Program Status Register
+       - SPSR: Saved Program Status Register
+
+
 ## ARM Instruction Format
 
 MNEUMONIC{S}{condition} {Rd}, {Operand1}, {Operand2}
