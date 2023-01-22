@@ -27,3 +27,12 @@ ORR ... ... ...
 EOR ... ... ...     ; eXclusive OR    
 BIC ... ... ...     ; BIt Clear (AND operation on the bits in Rn with the corresponding bits in Operand2)
 ```
+
+COMPARE
+
+```asm
+CMP
+CMN
+TST
+TEQ
+```
