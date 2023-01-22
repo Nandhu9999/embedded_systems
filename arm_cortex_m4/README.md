@@ -19,8 +19,10 @@
 - DIR register is used to set the direction for that particular Port
 - **PORT F** has **8 PINS**, which needs to be identified if its taking input or giving output
     - 0x0E is 0000 1110 so
+    - 1 = OUTPUT, 0 = INPUT
     - 0 1 2 3 4 5 6 7
     - 0 0 0 0 **1 1 1 0**
+    
 
 ```c
   GPIOA->DIR=0xFF;
