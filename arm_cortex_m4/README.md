@@ -19,16 +19,17 @@
 - DIR register is used to set the direction for that particular Port
 - **PORT F** has **8 PINS**, which needs to be identified if its taking input or giving output
     - 0x0E is 0000 1110 so
-    - 1 = OUTPUT, 0 = INPUT
     - 0 1 2 3 4 5 6 7 | PINS
-    - 0 0 0 0 1 1 1 0  | OU1PUT OR INP0T
+    - 0 0 0 0 1 1 1 0  | OU**1**PUT OR INP**0**T
     
 
 ```c
   GPIOA->DIR=0xFF;
   GPIOA->DEN=0xFF;
 ```
-- ...
+- Digital ENable register of the GPIO port A
+- used enable or disable the digital functionality of the individual pins
+- ENAB**1**E or DIS**0**BLE
 
 ```c
     GPIOF->DEN = 0x1E;
