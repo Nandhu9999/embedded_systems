@@ -121,13 +121,13 @@ LOAD/STORE
 BRANCH
 ```asm
     
-    B      ;
-    BNE    ;
-    BEQ    ;
+    B      ; Branch
+    BNE    ; Branch Not Equals
+    BEQ    ; Branch Equals
     
-    BL     ; 
-    BX     ; 
-    BLX    ; 
+    BL     ; Branch Link
+    BX     ; Branch Exchange
+    BLX    ; Branch Link Exchange
 
 ```
 
