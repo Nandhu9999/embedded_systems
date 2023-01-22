@@ -37,5 +37,7 @@
 ```
 - Pull Up Register is used to enable or disable the internal pull-up resistor of the pins
 - it means, to ???
--  
+    - 0x10 is 0001 0000 so
+    - 0 1 2 3 4 5 6 7 | PINS
+    - 0 0 0 1 0 0 0 0  | ENAB**1**E or DIS**0**BLE
 
