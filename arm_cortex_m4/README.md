@@ -11,7 +11,7 @@
     - C : 8pins
     - D : 8pins
     - E : 6pins
-    - F : 8pins
+    - F : 5pins
 
 ```c
   SYSCTL->RCGCGPIO |= 0x21
@@ -27,7 +27,7 @@
 - **PORT F** has **8 PINS**, which needs to be identified if its taking input or giving output
 
     - 0x0E is 0000 1110 so
-    - 0 1 2 3 4 5 6 7 | PINS
+    - 7 6 5 4 3 2 1 0 | PINS
     - 0 0 0 0 1 1 1 0  | OU**1**PUT OR INP**0**T
     
 
@@ -37,7 +37,7 @@
 - Digital ENable register used to enable or disable the digital functionality of the individual pins
 
     - 0xFF is 1111 1111 so
-    - 0 1 2 3 4 5 6 7 | PINS
+    - 7 6 5 4 3 2 1 0 | PINS
     - 1 1 1 1 1 1 1 1  | ENAB**1**E or DIS**0**BLE
 - enabled = can be used for both input and output digital signals
 
@@ -49,7 +49,7 @@
 This can be useful in preventing floating inputs or debouncing switch inputs.*
 
     - 0x10 is 0001 0000 so
-    - 0 1 2 3 4 5 6 7 | PINS
+    - 7 6 5 4 3 2 1 0 | PINS
     - 0 0 0 1 0 0 0 0  | ENAB**1**E or DIS**0**BLE
 
 ```c
