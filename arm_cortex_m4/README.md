@@ -34,7 +34,7 @@
 ```c
   GPIOA->DEN=0xFF;
 ```
-- Digital ENable register used to enable or disable the digital functionality of the individual pins
+- Digital ENable register used to enable or disable the digital functionality of the individual pins instead of analog fn.
 
     - 0xFF is 1111 1111 so
     - 7 6 5 4 3 2 1 0 | PINS
